@@ -136,6 +136,50 @@ export default function Home() {
 
       {/* Footer / Ads Space */}
       <AdUnit className="mt-20 w-full max-w-5xl h-32" slotId="FOOTER_SLOT_ID" />
+
+      {/* SEO Content Section */}
+      <section className="mt-24 w-full max-w-4xl text-gray-400 space-y-12 pb-20">
+        
+        <div>
+          <h2 className="text-2xl font-bold text-white mb-4">About SpeedTest Pro</h2>
+          <p className="leading-relaxed">
+            SpeedTest Pro is the ultimate tool for checking your <strong className="text-neon-cyan">internet speed</strong>. 
+            Whether you are on <strong>WiFi, 5G, 4G LTE, or fiber</strong>, our precision algorithm measures your connection's 
+            bandwidth to the nearest server. Use our tool to verify if your ISP is delivering the speeds you pay for.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">What is Download Speed?</h3>
+              <p className="text-sm">
+                Download speed measures how fast information is transferred to you. It affects things like loading web pages, 
+                streaming videos on Netflix/YouTube, and downloading files. Measured in Megabits per second (Mbps).
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">What does Ping mean?</h3>
+              <p className="text-sm">
+                Ping (connection latency) is the reaction time of your connection. A fast ping (low number) means a more 
+                responsive connection, which is critical for <strong>online gaming</strong> and video calls (Zoom/Skype).
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">What is Jitter?</h3>
+              <p className="text-sm">
+                Jitter is the variance in ping. High jitter can result in buffering or lag spikes during gaming. 
+                SpeedTest Pro measures jitter to give you a complete health check of your network stability.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">Upload Speed</h3>
+              <p className="text-sm">
+                 Upload speed measures how fast you can send data to others. This is important for sending big files via email, 
+                 video chatting to friends, or live streaming on Twitch or YouTube.
+              </p>
+            </div>
+        </div>
+      </section>
     </main>
   );
 }
